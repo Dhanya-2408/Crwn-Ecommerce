@@ -4,8 +4,7 @@ import Home from "./routes/home/home.component";
 import Navigation from "./routes/navigation/navigation.component";
 import Authentication from "./routes/authentication/authentication.component";
 import { UserContext } from "./context/user.context";
-
-const Shop = () => <h1>I am Shop</h1>;
+import Shop from "./routes/shop/shop.component";
 
 const App = () => {
   const { currentUser } = useContext(UserContext);
