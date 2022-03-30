@@ -1,6 +1,6 @@
 import { useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { Routes, Route, Navigate } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { Routes, Route } from "react-router-dom";
 import {
   onAuthStateChangedListener,
   createUserDocumentFromAuth,
@@ -25,6 +25,7 @@ const App = () => {
     });
 
     return unsubscribe;
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
