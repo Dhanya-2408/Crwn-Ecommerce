@@ -49,8 +49,6 @@ export const UserProvider = ({ children }) => {
     return unsubscribe;
   }, []);
 
-  
-
   const value = {
     currentUser,
   };
